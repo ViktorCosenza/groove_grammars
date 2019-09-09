@@ -134,6 +134,21 @@
                 <string>1019 203 12 17</string>
             </attr>
         </node>
+        <node id="n26">
+            <attr name="layout">
+                <string>29 74 28 17</string>
+            </attr>
+        </node>
+        <node id="n27">
+            <attr name="layout">
+                <string>487 31 28 17</string>
+            </attr>
+        </node>
+        <node id="n28">
+            <attr name="layout">
+                <string>151 496 28 17</string>
+            </attr>
+        </node>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>type:ATM</string>
@@ -179,6 +194,11 @@
                 <string>nome</string>
             </attr>
         </edge>
+        <edge from="n4" to="n26">
+            <attr name="label">
+                <string>dinheiro</string>
+            </attr>
+        </edge>
         <edge from="n7" to="n7">
             <attr name="label">
                 <string>string:"Pedro"</string>
@@ -194,14 +214,14 @@
                 <string>type:conta</string>
             </attr>
         </edge>
-        <edge from="n6" to="n5">
-            <attr name="label">
-                <string>saldo</string>
-            </attr>
-        </edge>
         <edge from="n6" to="n16">
             <attr name="label">
                 <string>tem</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n5">
+            <attr name="label">
+                <string>saldo</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
@@ -214,14 +234,19 @@
                 <string>type:cliente</string>
             </attr>
         </edge>
+        <edge from="n8" to="n9">
+            <attr name="label">
+                <string>nome</string>
+            </attr>
+        </edge>
         <edge from="n8" to="n6">
             <attr name="label">
                 <string>titular</string>
             </attr>
         </edge>
-        <edge from="n8" to="n9">
+        <edge from="n8" to="n27">
             <attr name="label">
-                <string>nome</string>
+                <string>dinheiro</string>
             </attr>
         </edge>
         <edge from="n9" to="n9">
@@ -234,17 +259,17 @@
                 <string>type:conta</string>
             </attr>
         </edge>
+        <edge from="n11" to="n10">
+            <attr name="label">
+                <string>saldo</string>
+            </attr>
+        </edge>
         <edge from="n11" to="n18">
             <attr name="label">
                 <string>tem</string>
             </attr>
             <attr name="layout">
-                <string>1000 7 331 614 400 614 11</string>
-            </attr>
-        </edge>
-        <edge from="n11" to="n10">
-            <attr name="label">
-                <string>saldo</string>
+                <string>1000 7 305 613 436 617 11</string>
             </attr>
         </edge>
         <edge from="n10" to="n10">
@@ -267,6 +292,11 @@
                 <string>titular</string>
             </attr>
         </edge>
+        <edge from="n12" to="n28">
+            <attr name="label">
+                <string>dinheiro</string>
+            </attr>
+        </edge>
         <edge from="n13" to="n13">
             <attr name="label">
                 <string>string:"Joao"</string>
@@ -277,14 +307,14 @@
                 <string>type:display</string>
             </attr>
         </edge>
-        <edge from="n14" to="n0">
-            <attr name="label">
-                <string>at</string>
-            </attr>
-        </edge>
         <edge from="n14" to="n15">
             <attr name="label">
                 <string>msg</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n0">
+            <attr name="label">
+                <string>at</string>
             </attr>
         </edge>
         <edge from="n15" to="n15">
@@ -357,19 +387,34 @@
                 <string>type:display</string>
             </attr>
         </edge>
-        <edge from="n23" to="n22">
-            <attr name="label">
-                <string>msg</string>
-            </attr>
-        </edge>
         <edge from="n23" to="n24">
             <attr name="label">
                 <string>at</string>
             </attr>
         </edge>
+        <edge from="n23" to="n22">
+            <attr name="label">
+                <string>msg</string>
+            </attr>
+        </edge>
         <edge from="n22" to="n22">
             <attr name="label">
                 <string>string:""</string>
+            </attr>
+        </edge>
+        <edge from="n26" to="n26">
+            <attr name="label">
+                <string>real:0.0</string>
+            </attr>
+        </edge>
+        <edge from="n27" to="n27">
+            <attr name="label">
+                <string>real:15.0</string>
+            </attr>
+        </edge>
+        <edge from="n28" to="n28">
+            <attr name="label">
+                <string>real:15.0</string>
             </attr>
         </edge>
     </graph>

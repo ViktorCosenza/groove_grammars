@@ -31,12 +31,7 @@
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>642 103 42 17</string>
-            </attr>
-        </node>
-        <node id="n12">
-            <attr name="layout">
-                <string>517 233 19 19</string>
+                <string>597 104 42 17</string>
             </attr>
         </node>
         <node id="n0">
@@ -51,7 +46,7 @@
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>501 359 52 17</string>
+                <string>497 150 52 17</string>
             </attr>
         </node>
         <node id="n9">
@@ -84,19 +79,14 @@
                 <string>21 229 59 17</string>
             </attr>
         </node>
-        <node id="n16">
-            <attr name="layout">
-                <string>632 231 42 17</string>
-            </attr>
-        </node>
         <node id="n15">
             <attr name="layout">
-                <string>743 360 42 17</string>
+                <string>741 410 42 17</string>
             </attr>
         </node>
         <node id="n17">
             <attr name="layout">
-                <string>753 184 19 19</string>
+                <string>609 233 19 19</string>
             </attr>
         </node>
         <node id="n18">
@@ -107,6 +97,36 @@
         <node id="n19">
             <attr name="layout">
                 <string>340 338 26 17</string>
+            </attr>
+        </node>
+        <node id="n16">
+            <attr name="layout">
+                <string>749 331 19 19</string>
+            </attr>
+        </node>
+        <node id="n21">
+            <attr name="layout">
+                <string>613 334 52 17</string>
+            </attr>
+        </node>
+        <node id="n12">
+            <attr name="layout">
+                <string>874 274 42 17</string>
+            </attr>
+        </node>
+        <node id="n22">
+            <attr name="layout">
+                <string>887 145 19 19</string>
+            </attr>
+        </node>
+        <node id="n23">
+            <attr name="layout">
+                <string>1012 146 24 17</string>
+            </attr>
+        </node>
+        <node id="n24">
+            <attr name="layout">
+                <string>723 235 42 17</string>
             </attr>
         </node>
         <edge from="n1" to="n1">
@@ -129,14 +149,14 @@
                 <string>type:conta</string>
             </attr>
         </edge>
-        <edge from="n2" to="n3">
-            <attr name="label">
-                <string>saldo</string>
-            </attr>
-        </edge>
         <edge from="n2" to="n9">
             <attr name="label">
                 <string>tem</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n3">
+            <attr name="label">
+                <string>saldo</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -149,41 +169,12 @@
                 <string>type:op</string>
             </attr>
         </edge>
-        <edge from="n4" to="n6">
-            <attr name="label">
-                <string>del:msg</string>
-            </attr>
-            <attr name="layout">
-                <string>500 0 162 239 282 245 518 247 12</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n0">
-            <attr name="label">
-                <string>iterador</string>
-            </attr>
-            <attr name="layout">
-                <string>610 -12 162 228 162 170 238 170 11</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n7">
-            <attr name="label">
-                <string>new:msg</string>
-            </attr>
-            <attr name="layout">
-                <string>440 11 152 228 152 111 632 111 11</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n5">
-            <attr name="label">
-                <string>tipo</string>
-            </attr>
-        </edge>
         <edge from="n4" to="n18">
             <attr name="label">
                 <string>del:pronto</string>
             </attr>
             <attr name="layout">
-                <string>640 -12 174 251 217 291 326 291 11</string>
+                <string>640 -12 162 239 217 291 349 296 11</string>
             </attr>
         </edge>
         <edge from="n4" to="n19">
@@ -191,7 +182,36 @@
                 <string>new:pronto</string>
             </attr>
             <attr name="layout">
-                <string>700 -14 169 251 230 351 332 351 11</string>
+                <string>700 -14 162 239 230 351 353 346 11</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n7">
+            <attr name="label">
+                <string>new:msg</string>
+            </attr>
+            <attr name="layout">
+                <string>440 11 162 239 152 111 663 111 11</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n6">
+            <attr name="label">
+                <string>del:msg</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 162 239 282 245 360 241 12</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n5">
+            <attr name="label">
+                <string>tipo</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n0">
+            <attr name="label">
+                <string>iterador</string>
+            </attr>
+            <attr name="layout">
+                <string>610 -12 162 239 162 170 254 169 11</string>
             </attr>
         </edge>
         <edge from="n6" to="n6">
@@ -204,26 +224,6 @@
                 <string>string:</string>
             </attr>
         </edge>
-        <edge from="n12" to="n12">
-            <attr name="label">
-                <string>prod:</string>
-            </attr>
-        </edge>
-        <edge from="n12" to="n6">
-            <attr name="label">
-                <string>arg:1</string>
-            </attr>
-        </edge>
-        <edge from="n12" to="n8">
-            <attr name="label">
-                <string>arg:0</string>
-            </attr>
-        </edge>
-        <edge from="n12" to="n16">
-            <attr name="label">
-                <string>string:concat</string>
-            </attr>
-        </edge>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>int:</string>
@@ -234,9 +234,9 @@
                 <string>prod:</string>
             </attr>
         </edge>
-        <edge from="n20" to="n0">
+        <edge from="n20" to="n10">
             <attr name="label">
-                <string>arg:0</string>
+                <string>arg:1</string>
             </attr>
         </edge>
         <edge from="n20" to="n11">
@@ -244,12 +244,12 @@
                 <string>int:eq</string>
             </attr>
             <attr name="layout">
-                <string>292 3 351 153 351 74 11</string>
+                <string>292 3 350 169 351 60 11</string>
             </attr>
         </edge>
-        <edge from="n20" to="n10">
+        <edge from="n20" to="n0">
             <attr name="label">
-                <string>arg:1</string>
+                <string>arg:0</string>
             </attr>
         </edge>
         <edge from="n8" to="n8">
@@ -267,7 +267,7 @@
                 <string>n_itens</string>
             </attr>
             <attr name="layout">
-                <string>500 0 382 391 464 391 439 183 11</string>
+                <string>500 0 348 391 464 391 465 169 11</string>
             </attr>
         </edge>
         <edge from="n10" to="n10">
@@ -285,14 +285,14 @@
                 <string>prod:</string>
             </attr>
         </edge>
-        <edge from="n13" to="n3">
-            <attr name="label">
-                <string>arg:0</string>
-            </attr>
-        </edge>
         <edge from="n13" to="n15">
             <attr name="label">
                 <string>real:toString</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n3">
+            <attr name="label">
+                <string>arg:0</string>
             </attr>
         </edge>
         <edge from="n14" to="n14">
@@ -302,17 +302,12 @@
         </edge>
         <edge from="n14" to="n14">
             <attr name="label">
-                <string>Gera o Saldo do historico</string>
+                <string>rem:Gera o Saldo do historico</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
             <attr name="label">
                 <string>string:"extrato"</string>
-            </attr>
-        </edge>
-        <edge from="n16" to="n16">
-            <attr name="label">
-                <string>string:</string>
             </attr>
         </edge>
         <edge from="n15" to="n15">
@@ -325,25 +320,19 @@
                 <string>prod:</string>
             </attr>
         </edge>
-        <edge from="n17" to="n16">
-            <attr name="label">
-                <string>arg:0</string>
-            </attr>
-            <attr name="layout">
-                <string>406 6 749 194 649 194 649 226 11</string>
-            </attr>
-        </edge>
-        <edge from="n17" to="n15">
+        <edge from="n17" to="n6">
             <attr name="label">
                 <string>arg:1</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n24">
+            <attr name="label">
+                <string>arg:0</string>
             </attr>
         </edge>
         <edge from="n17" to="n7">
             <attr name="label">
                 <string>string:concat</string>
-            </attr>
-            <attr name="layout">
-                <string>283 32 762 178 762 116 692 116 11</string>
             </attr>
         </edge>
         <edge from="n18" to="n18">
@@ -354,6 +343,69 @@
         <edge from="n19" to="n19">
             <attr name="label">
                 <string>bool:true</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>prod:</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n21">
+            <attr name="label">
+                <string>arg:0</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n15">
+            <attr name="label">
+                <string>arg:1</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n12">
+            <attr name="label">
+                <string>string:concat</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 774 339 893 339 893 261 11</string>
+            </attr>
+        </edge>
+        <edge from="n21" to="n21">
+            <attr name="label">
+                <string>string:"Saldo "</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>string:</string>
+            </attr>
+        </edge>
+        <edge from="n22" to="n22">
+            <attr name="label">
+                <string>prod:</string>
+            </attr>
+        </edge>
+        <edge from="n22" to="n23">
+            <attr name="label">
+                <string>arg:1</string>
+            </attr>
+        </edge>
+        <edge from="n22" to="n12">
+            <attr name="label">
+                <string>arg:0</string>
+            </attr>
+        </edge>
+        <edge from="n22" to="n24">
+            <attr name="label">
+                <string>string:concat</string>
+            </attr>
+        </edge>
+        <edge from="n23" to="n23">
+            <attr name="label">
+                <string>string:" -- "</string>
+            </attr>
+        </edge>
+        <edge from="n24" to="n24">
+            <attr name="label">
+                <string>string:</string>
             </attr>
         </edge>
     </graph>

@@ -21,7 +21,7 @@
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>549 246 12 17</string>
+                <string>515 246 80 17</string>
             </attr>
         </node>
         <node id="n2">
@@ -32,6 +32,11 @@
         <node id="n5">
             <attr name="layout">
                 <string>536 320 42 17</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>663 132 32 17</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -64,6 +69,11 @@
                 <string>type:op</string>
             </attr>
         </edge>
+        <edge from="n4" to="n6">
+            <attr name="label">
+                <string>pronto</string>
+            </attr>
+        </edge>
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>string:"Cancelado"</string>
@@ -72,11 +82,6 @@
         <edge from="n2" to="n2">
             <attr name="label">
                 <string>type:display</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n3">
-            <attr name="label">
-                <string>new:msg</string>
             </attr>
         </edge>
         <edge from="n2" to="n1">
@@ -89,12 +94,22 @@
                 <string>del:msg</string>
             </attr>
             <attr name="layout">
-                <string>500 0 327 265 327 331 524 331 11</string>
+                <string>500 0 323 253 327 331 557 328 11</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n3">
+            <attr name="label">
+                <string>new:msg</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
             <attr name="label">
                 <string>string:</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>bool:false</string>
             </attr>
         </edge>
     </graph>

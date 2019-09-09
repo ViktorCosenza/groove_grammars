@@ -1,67 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="require_balance">
+    <graph role="rule" edgeids="false" edgemode="directed" id="require_deposit">
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>122 130 49 17</string>
+                <string>127 279 49 17</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>307 132 32 17</string>
+                <string>330 281 32 17</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>585 106 103 68</string>
+                <string>542 280 18 17</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>516 55 19 19</string>
-            </attr>
-        </node>
-        <node id="n3">
-            <attr name="layout">
-                <string>719 84 19 19</string>
+                <string>395 197 68 17</string>
             </attr>
         </node>
         <node id="n6">
             <attr name="layout">
-                <string>134 23 32 17</string>
+                <string>133 413 32 17</string>
             </attr>
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>312 25 18 17</string>
+                <string>341 413 18 17</string>
             </attr>
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>627 38 19 19</string>
-            </attr>
-        </node>
-        <node id="n9">
-            <attr name="layout">
-                <string>300 253 41 17</string>
-            </attr>
-        </node>
-        <node id="n10">
-            <attr name="layout">
-                <string>452 259 63 17</string>
-            </attr>
-        </node>
-        <node id="n11">
-            <attr name="layout">
-                <string>631 259 19 17</string>
+                <string>661 282 32 17</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>155 341 355 17</string>
+                <string>651 202 12 17</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>135 168 28 17</string>
+            </attr>
+        </node>
+        <node id="n9">
+            <attr name="layout">
+                <string>265 82 19 19</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>264 186 20 17</string>
+            </attr>
+        </node>
+        <node id="n11">
+            <attr name="layout">
+                <string>406 82 26 17</string>
+            </attr>
+        </node>
+        <node id="n12">
+            <attr name="layout">
+                <string>188 31 342 17</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -79,6 +84,11 @@
                 <string>conectado</string>
             </attr>
         </edge>
+        <edge from="n0" to="n3">
+            <attr name="label">
+                <string>dinheiro</string>
+            </attr>
+        </edge>
         <edge from="n1" to="n1">
             <attr name="label">
                 <string>type:ATM</string>
@@ -87,11 +97,6 @@
         <edge from="n1" to="n4">
             <attr name="label">
                 <string>executando</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n9">
-            <attr name="label">
-                <string>cta</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
@@ -104,11 +109,6 @@
                 <string>type:op</string>
             </attr>
         </edge>
-        <edge from="n4" to="n3">
-            <attr name="label">
-                <string>msg</string>
-            </attr>
-        </edge>
         <edge from="n4" to="n5">
             <attr name="label">
                 <string>tipo</string>
@@ -119,19 +119,14 @@
                 <string>pronto</string>
             </attr>
         </edge>
-        <edge from="n4" to="n11">
+        <edge from="n4" to="n2">
             <attr name="label">
-                <string>new:iterador</string>
+                <string>msg</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
             <attr name="label">
-                <string>string:"extrato"</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n3">
-            <attr name="label">
-                <string>string:""</string>
+                <string>string:"deposito"</string>
             </attr>
         </edge>
         <edge from="n6" to="n6">
@@ -149,7 +144,7 @@
                 <string>executando</string>
             </attr>
             <attr name="layout">
-                <string>500 12 175 33 239 33 303 33 11</string>
+                <string>500 0 149 421 210 422 350 421 11</string>
             </attr>
         </edge>
         <edge from="n7" to="n7">
@@ -167,39 +162,63 @@
                 <string>bool:false</string>
             </attr>
         </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>string:""</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>real:</string>
+            </attr>
+        </edge>
         <edge from="n9" to="n9">
             <attr name="label">
-                <string>type:conta</string>
+                <string>prod:</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n3">
+            <attr name="label">
+                <string>arg:0</string>
+            </attr>
+            <attr name="layout">
+                <string>543 -11 259 91 147 91 147 163 11</string>
             </attr>
         </edge>
         <edge from="n9" to="n10">
             <attr name="label">
-                <string>tem</string>
+                <string>arg:1</string>
+            </attr>
+            <attr name="layout">
+                <string>533 13 274 107 274 181 11</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n11">
+            <attr name="label">
+                <string>real:gt</string>
+            </attr>
+            <attr name="layout">
+                <string>423 11 290 91 398 91 11</string>
             </attr>
         </edge>
         <edge from="n10" to="n10">
             <attr name="label">
-                <string>type:historico</string>
-            </attr>
-        </edge>
-        <edge from="n10" to="n11">
-            <attr name="label">
-                <string>n_itens</string>
+                <string>real:0.0</string>
             </attr>
         </edge>
         <edge from="n11" to="n11">
             <attr name="label">
-                <string>int:</string>
+                <string>bool:true</string>
             </attr>
         </edge>
-        <edge from="n2" to="n2">
+        <edge from="n12" to="n12">
             <attr name="label">
                 <string>rem:</string>
             </attr>
         </edge>
-        <edge from="n2" to="n2">
+        <edge from="n12" to="n12">
             <attr name="label">
-                <string>rem:O Saldo eh simplesmente um caso especial do extrato</string>
+                <string>Tenta fazer um deposito se possuir dinheiro positivo</string>
             </attr>
         </edge>
     </graph>
