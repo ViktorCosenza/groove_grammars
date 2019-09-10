@@ -69,14 +69,14 @@
                 <string>type:op</string>
             </attr>
         </edge>
-        <edge from="n4" to="n3">
-            <attr name="label">
-                <string>msg</string>
-            </attr>
-        </edge>
         <edge from="n4" to="n8">
             <attr name="label">
                 <string>pronto</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n3">
+            <attr name="label">
+                <string>msg</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -94,11 +94,6 @@
                 <string>type:display</string>
             </attr>
         </edge>
-        <edge from="n2" to="n3">
-            <attr name="label">
-                <string>new:msg</string>
-            </attr>
-        </edge>
         <edge from="n2" to="n1">
             <attr name="label">
                 <string>at</string>
@@ -109,17 +104,17 @@
                 <string>del:msg</string>
             </attr>
             <attr name="layout">
-                <string>500 0 327 265 327 331 524 331 11</string>
+                <string>500 0 323 253 327 331 552 329 11</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n3">
+            <attr name="label">
+                <string>new:msg</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
             <attr name="label">
                 <string>string:</string>
-            </attr>
-        </edge>
-        <edge from="n5" to="n3">
-            <attr name="label">
-                <string>!=</string>
             </attr>
         </edge>
     </graph>
