@@ -11,7 +11,7 @@
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>270 329 58 17</string>
+                <string>263 262 58 17</string>
             </attr>
         </node>
         <node id="n3">
@@ -26,7 +26,7 @@
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>306 62 22 17</string>
+                <string>365 141 22 17</string>
             </attr>
         </node>
         <node id="n8">
@@ -51,17 +51,22 @@
         </node>
         <node id="n9">
             <attr name="layout">
-                <string>295 451 49 17</string>
+                <string>264 333 49 17</string>
             </attr>
         </node>
-        <node id="n10">
+        <node id="n12">
             <attr name="layout">
-                <string>332 545 19 17</string>
+                <string>366 55 19 17</string>
             </attr>
         </node>
-        <node id="n11">
+        <node id="n13">
             <attr name="layout">
-                <string>30 531 19 17</string>
+                <string>516 377 19 17</string>
+            </attr>
+        </node>
+        <node id="n14">
+            <attr name="layout">
+                <string>274 91 31 17</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -102,16 +107,6 @@
                 <string>d</string>
             </attr>
         </edge>
-        <edge from="n3" to="n11">
-            <attr name="label">
-                <string>vagas_livres_carros</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n10">
-            <attr name="label">
-                <string>vagas_livres_motos</string>
-            </attr>
-        </edge>
         <edge from="n6" to="n6">
             <attr name="label">
                 <string>type:vc</string>
@@ -122,6 +117,16 @@
                 <string>n</string>
             </attr>
         </edge>
+        <edge from="n6" to="n12">
+            <attr name="label">
+                <string>c</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n14">
+            <attr name="label">
+                <string>l</string>
+            </attr>
+        </edge>
         <edge from="n7" to="n7">
             <attr name="label">
                 <string>type:vm</string>
@@ -130,6 +135,16 @@
         <edge from="n7" to="n0">
             <attr name="label">
                 <string>n</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n12">
+            <attr name="label">
+                <string>c</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n14">
+            <attr name="label">
+                <string>l</string>
             </attr>
         </edge>
         <edge from="n8" to="n8">
@@ -147,6 +162,11 @@
                 <string>e</string>
             </attr>
         </edge>
+        <edge from="n1" to="n0">
+            <attr name="label">
+                <string>e</string>
+            </attr>
+        </edge>
         <edge from="n1" to="n6">
             <attr name="label">
                 <string>e</string>
@@ -157,14 +177,14 @@
                 <string>e</string>
             </attr>
         </edge>
-        <edge from="n1" to="n0">
-            <attr name="label">
-                <string>e</string>
-            </attr>
-        </edge>
         <edge from="n1" to="n9">
             <attr name="label">
                 <string>s</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n13">
+            <attr name="label">
+                <string>d</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
@@ -172,12 +192,22 @@
                 <string>type:m</string>
             </attr>
         </edge>
+        <edge from="n4" to="n0">
+            <attr name="label">
+                <string>e</string>
+            </attr>
+        </edge>
         <edge from="n4" to="n2">
             <attr name="label">
                 <string>e</string>
             </attr>
         </edge>
-        <edge from="n4" to="n0">
+        <edge from="n4" to="n9">
+            <attr name="label">
+                <string>s</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n3">
             <attr name="label">
                 <string>e</string>
             </attr>
@@ -187,14 +217,9 @@
                 <string>e</string>
             </attr>
         </edge>
-        <edge from="n4" to="n3">
+        <edge from="n4" to="n13">
             <attr name="label">
-                <string>e</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n9">
-            <attr name="label">
-                <string>s</string>
+                <string>d</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
@@ -207,14 +232,19 @@
                 <string>type:saindo</string>
             </attr>
         </edge>
-        <edge from="n10" to="n10">
+        <edge from="n12" to="n12">
             <attr name="label">
                 <string>int:</string>
             </attr>
         </edge>
-        <edge from="n11" to="n11">
+        <edge from="n13" to="n13">
             <attr name="label">
                 <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>type:livre</string>
             </attr>
         </edge>
     </graph>

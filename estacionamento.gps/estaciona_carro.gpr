@@ -6,32 +6,47 @@
         </attr>
         <node id="n1">
             <attr name="layout">
-                <string>352 141 8 17</string>
+                <string>460 237 8 17</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>240 51 4 17</string>
+                <string>124 78 4 17</string>
             </attr>
         </node>
         <node id="n0">
             <attr name="layout">
-                <string>123 132 16 17</string>
+                <string>117 197 16 17</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>333 31 49 17</string>
-            </attr>
-        </node>
-        <node id="n4">
-            <attr name="layout">
-                <string>124 375 8 17</string>
+                <string>439 351 49 17</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>467 140 49 17</string>
+                <string>459 89 49 17</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>643 35 49 17</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>206 333 19 17</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>107 328 31 17</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>358 383 19 17</string>
             </attr>
         </node>
         <edge from="n1" to="n1">
@@ -39,9 +54,9 @@
                 <string>type:c</string>
             </attr>
         </edge>
-        <edge from="n1" to="n2">
+        <edge from="n1" to="n0">
             <attr name="label">
-                <string>del:e</string>
+                <string>new:e</string>
             </attr>
         </edge>
         <edge from="n1" to="n3">
@@ -49,14 +64,24 @@
                 <string>s</string>
             </attr>
         </edge>
-        <edge from="n1" to="n0">
+        <edge from="n1" to="n2">
             <attr name="label">
-                <string>new:e</string>
+                <string>del:e</string>
             </attr>
         </edge>
         <edge from="n1" to="n5">
             <attr name="label">
                 <string>s</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n7">
+            <attr name="label">
+                <string>new:d</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n8">
+            <attr name="label">
+                <string>del:d</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
@@ -74,6 +99,16 @@
                 <string>n</string>
             </attr>
         </edge>
+        <edge from="n0" to="n7">
+            <attr name="label">
+                <string>c</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n4">
+            <attr name="label">
+                <string>l</string>
+            </attr>
+        </edge>
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>not:</string>
@@ -82,21 +117,6 @@
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>type:saindo</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>not:</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>type:c</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n0">
-            <attr name="label">
-                <string>e</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
@@ -107,6 +127,31 @@
         <edge from="n5" to="n5">
             <attr name="label">
                 <string>type:saindo</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>type:aberto</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>del:</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:livre</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>int:</string>
             </attr>
         </edge>
     </graph>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="estaciona_moto">
+    <graph role="rule" edgeids="false" edgemode="directed" id="desestaciona_moto">
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n1">
             <attr name="layout">
-                <string>460 237 8 17</string>
+                <string>253 195 14 17</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>124 78 4 17</string>
+                <string>125 79 4 17</string>
             </attr>
         </node>
         <node id="n0">
@@ -19,34 +19,24 @@
                 <string>114 197 22 17</string>
             </attr>
         </node>
-        <node id="n3">
-            <attr name="layout">
-                <string>439 351 49 17</string>
-            </attr>
-        </node>
-        <node id="n5">
-            <attr name="layout">
-                <string>459 89 49 17</string>
-            </attr>
-        </node>
         <node id="n6">
             <attr name="layout">
-                <string>643 35 49 17</string>
-            </attr>
-        </node>
-        <node id="n7">
-            <attr name="layout">
-                <string>206 333 19 17</string>
+                <string>654 22 49 17</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>107 328 31 17</string>
+                <string>112 337 31 17</string>
             </attr>
         </node>
-        <node id="n8">
+        <node id="n3">
             <attr name="layout">
-                <string>358 383 19 17</string>
+                <string>292 43 24 17</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>289 116 14 17</string>
             </attr>
         </node>
         <edge from="n1" to="n1">
@@ -56,32 +46,12 @@
         </edge>
         <edge from="n1" to="n0">
             <attr name="label">
-                <string>new:e</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n3">
-            <attr name="label">
-                <string>s</string>
+                <string>del:e</string>
             </attr>
         </edge>
         <edge from="n1" to="n2">
             <attr name="label">
-                <string>del:e</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n5">
-            <attr name="label">
-                <string>s</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n7">
-            <attr name="label">
-                <string>new:d</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n8">
-            <attr name="label">
-                <string>del:d</string>
+                <string>new:e</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
@@ -99,14 +69,24 @@
                 <string>n</string>
             </attr>
         </edge>
-        <edge from="n0" to="n7">
-            <attr name="label">
-                <string>c</string>
-            </attr>
-        </edge>
         <edge from="n0" to="n4">
             <attr name="label">
                 <string>l</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>type:aberto</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>new:</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:livre</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -116,42 +96,27 @@
         </edge>
         <edge from="n3" to="n3">
             <attr name="label">
-                <string>type:saindo</string>
+                <string>type:c</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n2">
+            <attr name="label">
+                <string>e</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
             <attr name="label">
-                <string>new:</string>
+                <string>not:</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
             <attr name="label">
-                <string>type:saindo</string>
+                <string>type:m</string>
             </attr>
         </edge>
-        <edge from="n6" to="n6">
+        <edge from="n5" to="n2">
             <attr name="label">
-                <string>type:aberto</string>
-            </attr>
-        </edge>
-        <edge from="n7" to="n7">
-            <attr name="label">
-                <string>int:</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>del:</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>type:livre</string>
-            </attr>
-        </edge>
-        <edge from="n8" to="n8">
-            <attr name="label">
-                <string>int:</string>
+                <string>e</string>
             </attr>
         </edge>
     </graph>
